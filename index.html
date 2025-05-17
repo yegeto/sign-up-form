@@ -6,47 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <main>
     <section class="branding-section">
-      <h1 class="banner">ODIN</h1>
+      <div class="banner">
+        <img src="odin-lined.png" alt="odin symbol">
+        <h1>ODIN</h1>
+      </div>
+      <figcaption>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+      </figcaption>
     </section>
     <section class="form-section">
       <div class="info-section">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize
-          your
-          deepest dreams. Sign up now to get started.</p>
-        <p>You <span>know</span> you want to.</p>
+        <p>This is not a real online service! You know you need something
+          like this in your life to help you realize your deepest dreams. <br>
+          Sign up <span class="italic">now</span> to get started.</p>
+        <p>You <span class="italic">know</span> you want to.</p>
       </div>
       <form>
         <div class="input-section">
           <h2>Let's do this!</h2>
-          <p>
-            <label for="first-name">Firs Name</label>
-            <input type="text" name="name" id="first-name">
-          </p>
-          <p>
-            <label for="last-name">Last Name</label>
-            <input type="text" name="surname" id="last-name">
-          </p>
-          <p>
-            <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail">
-          </p>
-          <p>
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone">
-          </p>
-          <p>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-          </p>
-          <p>
-            <label for="pwd-confirm">Confirm Password</label>
-            <input type="password" name="pwd-confirm" id="pwd-confirm">
-          </p>
+          <div class="input-container">
+            <p>
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="name" id="first-name">
+            </p>
+            <p>
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="surname" id="last-name">
+            </p>
+            <p>
+              <label for="mail">EMAIL</label>
+              <input type="email" name="mail" id="mail">
+            </p>
+            <p>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="phone">
+            </p>
+            <p>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+              <label for="pwd-confirm">CONFIRM PASSWORD</label>
+              <input type="password" name="pwd-confirm" id="pwd-confirm" required>
+            </p>
+          </div>
         </div>
         <div class="submit-section">
           <button>Create account</button>
@@ -55,7 +68,6 @@
       </form>
     </section>
   </main>
-
 </body>
 
 </html>

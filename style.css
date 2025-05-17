@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'norse';
+  src: url('Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+section.branding-section {
+  background-image: url(green-leaf.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  flex: 0 0 40%;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.banner img {
+  height: 200px;
+}
+
+.banner h1 {
+  font-family: norse;
+  font-size: 12rem;
+  margin: 0;
+}
+
+.branding-section figcaption {
+  margin-top: auto;
+  padding: 16px;
+  font-size: 0.8rem;
+}
+
+figcaption a {
+  color: inherit;
+}
+
+section.form-section {
+  background-color: #f8f9fa;
+}
+
+.info-section,
+.input-section,
+.submit-section {
+  padding-left: 50px;
+  padding-right: 170px;
+}
+
+.info-section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.info-section p,
+.input-section h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px
+}
+
+span.italic {
+  font-style: italic;
+}
+
+form .input-section {
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 50px
+}
+
+.input-container p {
+  margin: 0;
+  padding: 0;
+  flex: 0 0 30%;
+}
+
+.input-section label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.input-section input {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #728ce3;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.submit-section button {
+  margin-top: 30px;
+  color: white;
+  background-color: #596D48;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.submit-section p {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.submit-section a {
+  color: #596D48;
+  font-weight: 700;
+  text-decoration: none;
+}
